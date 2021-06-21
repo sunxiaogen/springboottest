@@ -2,6 +2,9 @@ package com.sxg.test;
 
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Util.println;
 
 /**
@@ -18,39 +21,66 @@ import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Util.println
 
 public class RunnableTest01  {
 
-    static void stopByFlag() {
-        ARunnable ar = new ARunnable();
-        new Thread(ar).start();
-        ar.tellToStop();
-    }
-
-    static class ARunnable implements Runnable {
-
-        volatile boolean stop;
-
-        void tellToStop() {
-            stop = true;
-        }
-
-        @Override
-        public void run() {
-            println("进入不可停止区域 1。。。");
-//            doingLongTime(5);
-            println("退出不可停止区域 1。。。");
-            println("检测标志stop = %s"+ String.valueOf(stop));
-            if (stop) {
-                println("停止执行");
-                return;
-            }
-            println("进入不可停止区域 2。。。");
-//            doingLongTime(5);
-            println("退出不可停止区域 2。。。");
-        }
-
-    }
+//    static void stopByFlag() {
+//        ARunnable ar = new ARunnable();
+//        new Thread(ar).start();
+//        ar.tellToStop();
+//    }
+//
+//    static class ARunnable implements Runnable {
+//
+//        volatile boolean stop;
+//
+//        void tellToStop() {
+//            stop = true;
+//        }
+//
+//        @Override
+//        public void run() {
+//            println("进入不可停止区域 1。。。");
+////            doingLongTime(5);
+//            println("退出不可停止区域 1。。。");
+//            println("检测标志stop = %s"+ String.valueOf(stop));
+//            if (stop) {
+//                println("停止执行");
+//                return;
+//            }
+//            println("进入不可停止区域 2。。。");
+////            doingLongTime(5);
+//            println("退出不可停止区域 2。。。");
+//        }
+//
+//    }
 
     public static void main(String[] args) {
-        stopByFlag();
+//        stopByFlag();
+//        int count=0 ;
+//        String isCanCancel = "1";
+//        int n = 1;
+//
+//        long interval = 1000;
+//        //for (int i = 0; i < count; i++) {
+//        //}
+//        while(true){
+//            System.out.println("开始重试通知crm订单--------");
+//            n++;
+//            String isCancel = "1";//重试查询crm状态
+//            if( ("1".equals(isCancel)||"4".equals(isCancel))){
+//                    System.out.println("第几次"+n);
+//                    // 通知成功
+//                if(n>count){
+//                    break;
+//                }
+//                //失败重试3次 每次间隔几分钟
+//                try {
+//                    Thread.sleep(interval);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }
+        Long orderId = Long.parseLong("1231312");
+        System.out.println(orderId);
     }
 
 }
