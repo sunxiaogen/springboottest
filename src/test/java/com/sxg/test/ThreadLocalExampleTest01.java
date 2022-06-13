@@ -1,6 +1,8 @@
 package com.sxg.test;
 
 import java.text.SimpleDateFormat;
+import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -23,12 +25,16 @@ public class ThreadLocalExampleTest01 implements Runnable {
         }
     };
     public static void main(String[] args) throws InterruptedException {
-        ThreadLocalExampleTest01 obj = new ThreadLocalExampleTest01();
-        for(int i=0 ; i<10; i++){
-            Thread t = new Thread(obj, ""+i);
-            Thread.sleep(new Random().nextInt(1000));
-            t.start();
-        }
+//        ThreadLocalExampleTest01 obj = new ThreadLocalExampleTest01();
+//        for(int i=0 ; i<10; i++){
+//            Thread t = new Thread(obj, ""+i);
+//            Thread.sleep(new Random().nextInt(1000));
+//            t.start();
+//        }
+//        Hashtable hashtable = new Hashtable();
+//        hashtable.put("123",null);
+        HashMap hashMap = new HashMap();
+        hashMap.put("234",null);
     }
     @Override
     public void run() {

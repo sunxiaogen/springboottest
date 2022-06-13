@@ -1,8 +1,7 @@
-package com.sxg.test;
+package com.sxg.test.多线程.runnable;
 
 
 import java.util.Random;
-import java.util.concurrent.Phaser;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

@@ -1,4 +1,4 @@
-package com.sxg.test;
+package com.sxg.test.多线程.runnable;
 
 
 import java.util.concurrent.CountDownLatch;

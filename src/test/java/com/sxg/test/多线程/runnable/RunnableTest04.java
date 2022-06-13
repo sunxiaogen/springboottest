@@ -1,4 +1,4 @@
-package com.sxg.test;
+package com.sxg.test.多线程.runnable;
 
 
 import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Util.println;
@@ -25,7 +25,7 @@ public class RunnableTest04 {
         t.start();
         try {
             println("准备睡2秒");
-            Thread.sleep(2000);
+            Thread.sleep(8000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -40,7 +40,7 @@ public class RunnableTest04 {
             println("进入暂停。。。");
             try {
                 println("准备睡5秒");
-                Thread.sleep(5000);
+                Thread.sleep(15000);
             } catch (InterruptedException e) {
                 println("收到中断异常。。。");
                 println("做一些相关处理。。。");

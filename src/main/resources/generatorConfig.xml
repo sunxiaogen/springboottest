@@ -36,8 +36,8 @@
 
         <!-- jdbc连接-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://47.96.238.1:3306/sxg_test?serverTimezone=UTC" userId="root"
-                        password="Abc123!_"/>
+                        connectionURL="jdbc:mysql://124.222.167.129:3310/test_db?useSSL=false&amp;serverTimezone=UTC" userId="root"
+                        password="123456"/>
 
         <!-- 类型转换 -->
         <javaTypeResolver>
@@ -66,7 +66,7 @@
         <!-- table可以有多个,每个数据库中的表都可以写一个table，tableName表示要匹配的数据库表,
         也可以在tableName属性中通过使用%通配符来匹配所有数据库表,
         只有匹配的表才会自动生成文件 enableSelectByPrimaryKey相应的配置表示是否生成相应的接口 -->
-        <table tableName="users" enableCountByExample="false" enableUpdateByExample="false"
+        <table tableName="student" enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"
                enableSelectByPrimaryKey="true" enableUpdateByPrimaryKey="true"
                enableDeleteByPrimaryKey="true">

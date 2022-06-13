@@ -1,8 +1,7 @@
-package com.sxg.test;
+package com.sxg.test.多线程.runnable;
 
 
 import java.util.Random;
-import java.util.concurrent.Exchanger;
 import java.util.concurrent.Phaser;
 
 import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Util.println;

@@ -1,4 +1,4 @@
-package com.sxg.test;
+package com.sxg.test.多线程.runnable;
 
 
 import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Util.println;
@@ -28,7 +28,7 @@ public class RunnableTest02 {
         new Thread(br).start();
         br.tellToPause();
         try {
-            Thread.sleep(8);
+            Thread.sleep(8000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
